@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RG Bicicletería</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#fff; color:#333; }
+   .hero {
+  background: url("PRIMERA.PNG") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45); /* Ajusta la opacidad aquí (0.3 más claro, 0.6 más oscuro) */
+  z-index: 1;
+}
+
+.hero h1, .hero h2, .hero a {
+  position: relative;
+  z-index: 2; /* para que el texto y el botón queden encima del overlay */
+}
+    h1 { font-size: 3rem; margin: 0.5rem 0; }
+    h2 { font-size: 1.5rem; margin: 0.5rem 0; }
+    .btn {
+      background: #25D366;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+    .categories {
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .cat {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+    .cat img { max-width: 100%; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Tu bici lista, siempre</h1>
+    <h2>Atención y garantía que hacen práctica tu movilidad</h2>
+    <a href="https://wa.me/5493573443715" target="_blank" class="btn">Consultanos por WhatsApp</a>
+  </div>
+
+  <section class="categories">
+    <div class="cat">
+      <img src="C:\Users\queve\OneDrive\Desktop\index\Ninos.png">
+      <h3>Niños</h3>
+    </div>
+    <div class="cat">
+      <img src="C:\Users\queve\OneDrive\Desktop\index\ADULTOS URBANAS.jpg">
+      <h3>Adultos Urbanas</h3>
+    </div>
+    <div class="cat">
+      <img src="C:\Users\queve\OneDrive\Desktop\index\MTB.png">
+      <h3>MTB</h3>
+    </div>
+    <div class="cat">
+      <img src="C:\Users\queve\OneDrive\Desktop\index\ACCESORIOS.png">
+      <h3>Accesorios</h3>
+    </div>
+  </section>
+</body>
+</html>
